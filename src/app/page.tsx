@@ -1,13 +1,13 @@
 import * as motion from "motion/react-client"
 import Image from 'next/image'
 import Link from 'next/link'
-import ReadMoreComponent from "./expand"
+import ReadMoreComponent from "./descriptions/expand"
 
 export default function Home() {
   return (
     <div>
         
-      <div className="absolute  md:ml-[30vw] ml-[0] mt-20">
+      <div className="absolute  md:ml-[25vw] ml-[0] mt-20">
         <motion.div
           initial={{ scale:0, opacity: -1}}
           animate={{ scale:1, opacity: 1}}>
