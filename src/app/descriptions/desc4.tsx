@@ -12,7 +12,7 @@ export default function Desc3() {
   };
 
   return (
-    <div>
+    <div suppressHydrationWarning>
       <motion.div
           animate={{y: -20,
             transition: {
@@ -34,10 +34,10 @@ export default function Desc3() {
         <motion.div
                 initial={{ y:0, opacity: -1}}
                 animate={{ y:10, opacity: 1}}>
-            <p id="expand"  className="m-auto md:w-150 w-fit" >
+            <div id="expand"  className="m-auto md:w-150 w-fit" >
             i really like meeting new people, so feel free to hmu on any of the socials on the top right. 
             i've also been getting more involved with clubs on campus, like FUSION, Design@UCI, and AI@UCI.
-            </p>
+            </div>
         </motion.div>
       )}
     </div>

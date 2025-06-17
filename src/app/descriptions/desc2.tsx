@@ -13,7 +13,7 @@ export default function Desc() {
   };
 
   return (
-    <div>
+    <div suppressHydrationWarning>
       <motion.div
           animate={{y: -20,
             transition: {
@@ -35,15 +35,15 @@ export default function Desc() {
         <motion.div
                 initial={{ y:0, opacity: -1}}
                 animate={{ y:10, opacity: 1}}>
-            <p id="expand"  className="m-auto md:w-150 w-fit" >
+            <div id="expand"  className="m-auto md:w-150 w-fit" >
             in my free time, i like to lift, play video games, loredrop, play guitar, and listen to music. 
             i like all genres of music, but my favorites are 
             <span className="text-purple-800"><Link href="https://open.spotify.com/artist/3tlXnStJ1fFhdScmQeLpuG?si=Dhchm20YTj-BDXMBGOfPtg"> rnb</Link></span>, 
             <span className="text-yellow-200"><Link href="https://open.spotify.com/artist/4vGrte8FDu062Ntj0RsPiZ?si=z3_qAuAeT7a3LqjPPGtW1Q"> prog rock</Link></span>, and 
             <span className="text-blue-500"><Link href="https://open.spotify.com/artist/5SXuuuRpukkTvsLuUknva1?si=iraXmqfBRIK9kBgLblhXaA"> rap</Link></span>.
             i've linked my favorite artist on each genre, but you can check out my spotify 
-            <span className="text-red-500"><Link href="https://open.spotify.com/artist/5SXuuuRpukkTvsLuUknva1?si=iraXmqfBRIK9kBgLblhXaA"> here</Link></span>.
-            </p>
+            <span className="text-red-500"><Link href="https://open.spotify.com/user/5ccy5hj8eppqsgzwvs3ul56nx?si=fead9f6750604988"> here</Link></span>.
+            </div>
             <div className="text-center"><Desc2/></div>
         </motion.div>
       )}

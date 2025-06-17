@@ -12,7 +12,7 @@ export default function Desc2() {
   };
 
   return (
-    <div>
+    <div suppressHydrationWarning>
       <motion.div
           animate={{y: -20,
             transition: {
@@ -34,7 +34,7 @@ export default function Desc2() {
         <motion.div
                 initial={{ y:0, opacity: -1}}
                 animate={{ y:10, opacity: 1}}>
-            <p id="expand"  className="m-auto md:w-150 w-fit" >
+            <div id="expand"  className="m-auto md:w-150 w-fit" >
             i've been lifting since september 2024, and you can usually spot me at the arc. i weigh 140, my bench pr is 205, and i skip 
             <motion.div
                 animate={{x: -2,
@@ -43,7 +43,7 @@ export default function Desc2() {
                 repeat: Infinity,
                 repeatType: "mirror",
             }}}> <span className="text-orange-900">legs.</span></motion.div>
-            </p>
+            </div>
             <Desc3/>
         </motion.div>
       )}

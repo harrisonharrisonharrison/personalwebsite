@@ -12,7 +12,7 @@ export default function ReadMoreComponent() {
   };
 
   return (
-    <div>
+    <div suppressHydrationWarning>
       <motion.div
           animate={{y: -20,
             transition: {
@@ -34,10 +34,10 @@ export default function ReadMoreComponent() {
         <motion.div
                 initial={{ y:0, opacity: -1}}
                 animate={{ y:10, opacity: 1}}>
-            <p id="expand"  className="m-auto md:w-150 w-fit mt-60" >
+            <div id="expand"  className="m-auto md:w-150 w-fit mt-60" >
             helloooo im harrison, a second year compsci major at uci, and this is my personal 
             website/portfolio. here, i hope to add a project showcase and create a gallery for my photos, among other things.
-            </p>
+            </div>
             <div className="text-center"><Desc/></div>
         </motion.div>
       )}
