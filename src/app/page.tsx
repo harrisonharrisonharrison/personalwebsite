@@ -21,7 +21,7 @@ export default function Home() {
           initial={{ y: "0px", opacity: 0}}
           animate={{ y: "100px", opacity: 1}}
         >
-          <p className="text-red-400 ml-[37vw]">
+          <p className="relative text-red-400 ml-[37vw]">
             harrison tran
           </p>
           <p className="absolute mt-[-25] text-blue-400 ml-[70vw]">
@@ -38,9 +38,9 @@ export default function Home() {
               height={20}
               width={20}
               alt="school"
-              className="absolute ml-[37vw]"
+              className="absolute ml-[550]"
           />
-          <p className="text-white ml-[38.3vw]">
+          <p className="text-white ml-[580]">
             uc irvine
           </p> 
           <Image
