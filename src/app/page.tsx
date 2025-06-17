@@ -1,6 +1,7 @@
 import * as motion from "motion/react-client"
 import Image from 'next/image'
 import Link from 'next/link'
+import ReadMoreComponent from "./expand"
 
 export default function Home() {
   return (
@@ -135,7 +136,8 @@ export default function Home() {
           </Link>
         </motion.div>
       </div>
-        
+      <div className="text-center"><ReadMoreComponent/></div>
+      
     </div>
   );
 }
