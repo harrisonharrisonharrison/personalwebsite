@@ -6,7 +6,7 @@ import Profile from "./profile"
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black">
         
       <Profile/>
       <div className="text-center"><ReadMoreComponent/></div>
