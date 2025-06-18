@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Profile(){
     return (
-        <div>
+        <div >
             <div className="absolute  md:ml-[25vw] ml-[0] mt-20">
         <motion.div
           initial={{ scale:0, opacity: -1}}

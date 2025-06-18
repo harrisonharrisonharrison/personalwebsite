@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="bg-black">
         
-      <Profile/>
-      <div className="text-center"><ReadMoreComponent/></div>
+      <div className="bg-black"><Profile/></div>
+      <div className=" bg-black text-center"><ReadMoreComponent/></div>
       
     </div>
   );
