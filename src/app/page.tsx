@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ReadMoreComponent from "./descriptions/expand"
 import Profile from "./profile"
+import { GTT } from "./elements/gtt"
+import { HNCC } from "./elements/hncc"
+import Navbar from "./elements/navbar"
 
 export default function Home() {
   return (
@@ -10,6 +13,9 @@ export default function Home() {
         
       <Profile/>
       <ReadMoreComponent/>
+      <GTT/>
+      <HNCC/>
+      <Navbar/>
     </div>
   );
 }
