@@ -6,11 +6,10 @@ import Profile from "./profile"
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
         
       <Profile/>
-      <div className="text-center"><ReadMoreComponent/></div>
-      
+      <ReadMoreComponent/>
     </div>
   );
 }

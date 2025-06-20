@@ -12,7 +12,7 @@ export default function ReadMoreComponent() {
   };
 
   return (
-    <div suppressHydrationWarning>
+    <div className="text-center " suppressHydrationWarning>
       <motion.div
           animate={{y: -20,
             transition: {
@@ -26,7 +26,7 @@ export default function ReadMoreComponent() {
                     src="/arrows.png" 
                     alt="Click Me!" 
                     width={30} height={30}
-                    className="absolute mt-60"
+                    className="absolute mt-60 w-fit"
                     />}
         </button>
       </motion.div>
@@ -34,7 +34,7 @@ export default function ReadMoreComponent() {
         <motion.div
                 initial={{ y:0, opacity: -1}}
                 animate={{ y:10, opacity: 1}}>
-            <div id="expand"  className="m-auto md:w-150 w-fit mt-60" >
+            <div id="expand"  className="text-center m-auto md:w-150 w-fit mt-60" >
             helloooo im harrison, a second year compsci major at uci, and this is my personal 
             website/portfolio. here, i hope to add a project showcase and create a gallery for my photos, among other things.
             </div>

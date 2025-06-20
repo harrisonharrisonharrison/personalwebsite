@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Profile(){
     return (
-        <div>
+        <div className="">
             <div className="absolute  md:ml-[25vw] ml-[0] mt-20">
         <motion.div
           initial={{ scale:0, opacity: -1}}
@@ -76,7 +76,7 @@ export default function Profile(){
           
       </div>
 
-      <div className="absolute ml-[89vw] md:ml-[70vw] mt-8 text-right">  
+      <div className="absolute xs:right-0 sm:right-0 md:left-0 md:ml-[70vw] mt-8 text-right">  
         <motion.div
           initial={{ y: "0px", opacity: 0}}
           animate={{ y: "73px", opacity: 1}}
